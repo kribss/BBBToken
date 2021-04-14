@@ -73,7 +73,7 @@ contract BBBToken{
         if(balanceOf[_to] != 0){
             emit FailedTransfer(msg.sender,_to, _value);
         }
-        require(balanceOf[_to] == 0, "Sorry, but but the account you're trying to send to is already a member.");
+        require(balanceOf[_to] == 0, "Sorry, but but the account you are trying to send to is already a member.");
         
         
         balanceOf[_from] -= _value;
